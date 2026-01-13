@@ -22,6 +22,7 @@ app.layout = html.Div(
             children=[
                 html.H1(
                     "Pink Morsel Sales Dashboard",
+                    id="header",   # ✅ REQUIRED for testing
                     style={
                         "fontSize": "3rem",
                         "fontWeight": "bold",
@@ -29,6 +30,7 @@ app.layout = html.Div(
                         "marginBottom": "10px"
                     }
                 ),
+
                 html.P(
                     "Filter by region to explore sales",
                     style={"color": "#6b7280", "fontSize": "1.2rem"}
